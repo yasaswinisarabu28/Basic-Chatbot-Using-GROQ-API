@@ -2,3 +2,4 @@ flask
 groq
 gunicorn
 python-dotenv
+flask_cors
