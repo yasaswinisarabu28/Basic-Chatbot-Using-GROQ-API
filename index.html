@@ -167,7 +167,7 @@
         
         // Step 5: Send to Flask
         try {
-            const response = await fetch("/chat", {
+            const response = await fetch("https://chatbot-4qan.onrender.com/chat", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({
@@ -216,7 +216,7 @@
         document.getElementById("chatbox").innerHTML = "";
         
         // Clear history in Flask
-        await fetch("/clear", {
+        await fetch("https://chatbot-4qan.onrender.com/chat", {
             method: "POST",
             headers: {"Content-Type": "application/json"}
         });
