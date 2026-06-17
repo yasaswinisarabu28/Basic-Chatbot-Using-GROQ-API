@@ -14,8 +14,9 @@ system_prompt = "You are a helpful AI assistant. Keep answers short and direct."
 
 @app.route("/")
 def home():
-    return render_template("index.html")
-
+    return {
+        "message":"Backend is running"
+    }
 @app.route("/chat", methods=["POST"])
 def chat():
     global history
